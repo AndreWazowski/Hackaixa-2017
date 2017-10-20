@@ -1,0 +1,193 @@
+﻿
+body {
+    padding-top: 60px;
+    font-family: Geneva, Tahoma, Verdana, sans-serif;
+    font-weight: 300;
+    line-height: 1.6em;
+    color: #272727;
+    background-color: #fff;
+    overflow-y: scroll;
+    
+}
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+#hackaixa-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(255, 255, 255, 1);
+    background: url(https://tgy64w74i567hklqjb-internetbanking.caixa.gov.br/siibc-static/nb/img/sprites.png) no-repeat -112px 0;
+    cursor: pointer;
+    z-index: 1;
+    width: 115px !important;
+    height: 25px !important;
+    position: relative;
+    left: 0;
+    top: 20px;
+}
+
+/* 
+    Menu Principal
+    Css gerado através do endereço
+    http://bootstrapdesigntools.com/tools/bootstrap-menu-builder/#/about-us 
+    Não personalizar código dentro do trecho abaixo.
+*/
+#hackaixa-bootstrap-menu.navbar-default {
+    font-size: 14px;
+    background-color: rgba(7, 111, 177, 1);
+    border-width: 1px;
+    border-radius: 5px 5px 0px 0px;
+    margin-right:1px;
+}
+
+    #hackaixa-bootstrap-menu.navbar-default .navbar-nav > li > a {
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(7, 111, 177, 1);
+    }
+
+        #hackaixa-bootstrap-menu.navbar-default .navbar-nav > li > a:hover,
+        #hackaixa-bootstrap-menu.navbar-default .navbar-nav > li > a:focus {
+            color: rgba(255, 255, 255, 1);
+            background-color: rgba(255, 161, 0, 1);
+        }
+
+    #hackaixa-bootstrap-menu.navbar-default .navbar-nav > .active > a,
+    #hackaixa-bootstrap-menu.navbar-default .navbar-nav > .active > a:hover,
+    #hackaixa-bootstrap-menu.navbar-default .navbar-nav > .active > a:focus {
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(7, 111, 177, 1);
+    }
+
+    #hackaixa-bootstrap-menu.navbar-default .navbar-toggle {
+        border-color: #076fb1;
+    }
+
+        #hackaixa-bootstrap-menu.navbar-default .navbar-toggle:hover,
+        #hackaixa-bootstrap-menu.navbar-default .navbar-toggle:focus {
+            background-color: #076fb1;
+        }
+
+        #hackaixa-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+            background-color: #076fb1;
+        }
+
+        #hackaixa-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+        #hackaixa-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+            background-color: #076fb1;
+        }
+
+.item-carrossel {
+    display: inline;
+    list-style-type: none;
+}
+
+    .item-carrossel label {
+        width: 120px !important;
+        text-align: center !important;
+        font-weight: normal;
+        cursor: pointer;
+        color: rgba(7, 111, 177, 1);
+        padding-top :10px;
+    }
+
+.jumbotron-ibc {
+    z-index: 10;
+    position: fixed;
+    padding-top: 15px;
+    /*padding-bottom: 10px;*/
+    color: inherit;
+    width: 99.8%;
+    background-color: white;
+    margin-right: auto;
+    margin-left: 1px;
+    border: 1px rgba(7, 111, 177, 1) solid;
+    border-radius: 0px 0px 5px 0px;
+    text-align: center !important;
+}
+
+
+.next {
+    background: url(https://tgy64w74i567hklqjb-internetbanking.caixa.gov.br/siibc-static/nb/img/45x29px_seta_direita-habilitada.png) no-repeat center;
+    cursor: pointer;
+    width: 60px;
+    height: 100px;
+    display: inline-block;
+    position: relative;
+}
+
+.prev {
+    background: url(https://tgy64w74i567hklqjb-internetbanking.caixa.gov.br/siibc-static/nb/img/45x29px_seta_esquerda-desabilitada.png) no-repeat center;
+    cursor: pointer;
+    width: 60px;
+    height: 100px;
+    display: inline-block;
+    position: relative;
+}
+
+.pesquisa {
+    padding: 15px;
+}
+
+.nav.navbar-nav.conta {
+    color: #fff;
+    padding: 10px 10px 10px 30px;
+}
+
+#logoff {
+    background-color: #256ec0;
+    z-index: 9;
+    font-size: 16px;
+    padding: 15px;
+}
+
+#logoff {
+    right: 0px !important;
+    background-color: transparent !important;
+    top: 7px !important;
+    position: absolute !important;
+}
+
+    #logoff span.logout {
+        width: auto !important;
+        height: auto !important;
+        margin: 0px !important;
+        padding: 0px !important;
+        color: #fff !important;
+        background: transparent !important;
+        cursor: pointer !important;
+        border-radius: 0px 0px 0px 0px !important;
+        -moz-border-radius: 2px 2px 2px 2px !important;
+        -webkit-border-radius: 0px 0px 0px 0px !important;
+        border: 0px solid transparent !important;
+        -webkit-box-shadow: 0px 0px 0px 0px transparent !important;
+        -moz-box-shadow: 0px 0px 0px 0px transparent !important;
+        box-shadow: 0px 0px 0px 0px transparent !important;
+        border: 0px solid transparent !important;
+    }
+
+
+        #logoff span.logout a {
+            color: #ffffff !important;
+            font-size: 16px !important;
+            background: url(https://tgy64w74i567hklqjb-internetbanking.caixa.gov.br/siibc-static/nb/img/sair_BankingN17.jpg) no-repeat 0px !important;
+            padding: 0 20px !important;
+            text-shadow: 0 0px 0 transparent !important;
+        }
+
+
+.lbIcone.selected {
+    background-color: rgba(255, 161, 0, 0.57);
+    color:#fff;
+}
+
+.lbIcone.selected img{
+    background:#fff;
+}
+
+#icones{
+    margin-left: -60px;
+}
+
+.menuItem{
+    cursor:pointer;
+}

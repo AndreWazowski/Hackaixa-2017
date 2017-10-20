@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="http://www.caixa.gov.br/Style%20Library/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="icon" type="image/x-icon" href="https://tgy64w74i567hklqjb-internetbanking.caixa.gov.br/favicon.ico">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Banking - Hackathon Caixa</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/scripts")
+    @RenderSection("JavaScript", false)
+    <script src="~/Scripts/_Views/Extrato.js"></script>
+    <script src="~/Scripts/_Views/Layout.js"></script>
+    <script src="~/Scripts/_Views/Helpers/csvparse.js"></script>
+    <script src="~/Scripts/_Views/Helpers/csvsup.js"></script>
+    <script src="~/Scripts/_Views/Helpers/strsup.js"></script>
+    <script src="~/Scripts/_Views/Helpers/ConverteTableJson.js"></script>
+</head>
+<body>
+
+    <div id="hackaixa-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/"></a>
+            </div>
+            <div id="conta" class="nav navbar-nav conta">
+                <div id="nomeConta"></div>
+                <div id="dadosConta"></div>
+            </div>
+            <div class="pesquisa col-md-3 col-md-offset-3">
+                <input id="pesquisa" class="form-control mr-sm-2" name="pesquisa" type="text" value="" title="O que você quer fazer?" placeholder="O que você quer fazer?" autocomplete="off" tabindex="12">
+            </div>
+
+            <div id="logoff">
+                <span class="logout" title="Sair">
+                    <a id="sair" title="Sair">Sair</a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron-ibc">
+        <ul id="icones"></ul>
+    </div>
+
+
+    <div id="wrapper" class="toggled">
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav"></ul>
+        </div>
+
+        <div id="page-content-wrapper" style="margin-top: 15%;">
+            <div id="conteudo" class="container-fluid">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        waitingDialog.show('Por favor, aguarde...', { dialogSize: 'sm' });
+        var rootUrl = '@Url.Content("~/")';
+        var rootUrlArquivosExternos = "https://tgy64w74i567hklqjb-internetbanking.caixa.gov.br/";
+
+    </script>
+
+
+</body>
+</html>
+

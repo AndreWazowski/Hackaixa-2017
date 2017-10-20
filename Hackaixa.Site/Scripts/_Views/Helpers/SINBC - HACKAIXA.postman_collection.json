@@ -1,0 +1,250 @@
+{
+	"variables": [],
+	"info": {
+		"name": "SINBC - HACKAIXA",
+		"_postman_id": "281f7011-47b1-809f-7dc5-7c429914431e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1 - Recebe Seed",
+			"request": {
+				"url": {
+					"raw": "https://tgy64w74i567hklqjb-internetbanking.caixa.gov.br/sinbc/nb/tpSeed?deviceKey=YAoUUggz8KebJxOyHksSYPP0y9eBLUzFcPcb%2BbVf%2Bd24LP2zicSXUsKaWEdVW1Nxc1CQyABZX2saiVu8Xrb4v3YBSc6L6t11Tp04IgnSqsRPX6f2v%2Fvcs9rveG8cWlNjrQpwilPnPO3Vuj1wq9H7KkthuLCmu4f5%2FZOCvmy%2BCqqmmO4qzocuInJwP0eg7tIgb82QZS3yTy26tgkir%2BP%2F1PTwwyM5M7oV0c5KA9EO5uY3Hm6Au%2FpjJiIg%2FULeHGovLRHV68ZwGmDAuFyUshyuannhAOB2seY19URAeEZzYxZ36rrdVR0wBDXOmM0P5USjjjq6T4fi0yhud%2BiS%2BGn1O%2BQ4IlKv5Q%3D%3D",
+					"protocol": "https",
+					"host": [
+						"tgy64w74i567hklqjb-internetbanking",
+						"caixa",
+						"gov",
+						"br"
+					],
+					"path": [
+						"sinbc",
+						"nb",
+						"tpSeed"
+					],
+					"query": [
+						{
+							"key": "deviceKey",
+							"value": "YAoUUggz8KebJxOyHksSYPP0y9eBLUzFcPcb%2BbVf%2Bd24LP2zicSXUsKaWEdVW1Nxc1CQyABZX2saiVu8Xrb4v3YBSc6L6t11Tp04IgnSqsRPX6f2v%2Fvcs9rveG8cWlNjrQpwilPnPO3Vuj1wq9H7KkthuLCmu4f5%2FZOCvmy%2BCqqmmO4qzocuInJwP0eg7tIgb82QZS3yTy26tgkir%2BP%2F1PTwwyM5M7oV0c5KA9EO5uY3Hm6Au%2FpjJiIg%2FULeHGovLRHV68ZwGmDAuFyUshyuannhAOB2seY19URAeEZzYxZ36rrdVR0wBDXOmM0P5USjjjq6T4fi0yhud%2BiS%2BGn1O%2BQ4IlKv5Q%3D%3D",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "2 - Envia Chave",
+			"request": {
+				"url": {
+					"raw": "https://tgy64w74i567hklqjb-internetbanking.caixa.gov.br/sinbc/nb/loginTp?nocache=1489679149924&context=sinbc",
+					"protocol": "https",
+					"host": [
+						"tgy64w74i567hklqjb-internetbanking",
+						"caixa",
+						"gov",
+						"br"
+					],
+					"path": [
+						"sinbc",
+						"nb",
+						"loginTp"
+					],
+					"query": [
+						{
+							"key": "nocache",
+							"value": "1489679149924",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "context",
+							"value": "sinbc",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "3 - Validar Usuario",
+			"request": {
+				"url": {
+					"raw": "https://tgy64w74i567hklqjb-internetbanking.caixa.gov.br/sinbc/nb/login/authUserNameTp?nocache=1489668722708",
+					"protocol": "https",
+					"host": [
+						"tgy64w74i567hklqjb-internetbanking",
+						"caixa",
+						"gov",
+						"br"
+					],
+					"path": [
+						"sinbc",
+						"nb",
+						"login",
+						"authUserNameTp"
+					],
+					"query": [
+						{
+							"key": "nocache",
+							"value": "1489668722708",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nomeUsuario",
+							"value": "<USUARIO_AQUI>",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "segmento",
+							"value": "1",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "userAgent",
+							"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "4 - Valida Senha",
+			"request": {
+				"url": {
+					"raw": "https://tgy64w74i567hklqjb-internetbanking.caixa.gov.br/sinbc/nb/login/authPasswordTp?nocache=1489668888143",
+					"protocol": "https",
+					"host": [
+						"tgy64w74i567hklqjb-internetbanking",
+						"caixa",
+						"gov",
+						"br"
+					],
+					"path": [
+						"sinbc",
+						"nb",
+						"login",
+						"authPasswordTp"
+					],
+					"query": [
+						{
+							"key": "nocache",
+							"value": "1489668888143",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userAgent",
+							"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "<SENHA_AQUI>",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "5 - Abrir a Home",
+			"request": {
+				"url": "https://tgy64w74i567hklqjb-internetbanking.caixa.gov.br/sinbc/nb/home#!/sinbc/nb/carrossel",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "6 - Logout",
+			"request": {
+				"url": {
+					"raw": "https://tgy64w74i567hklqjb-internetbanking.caixa.gov.br/sinbc/nb/logout?context=sinbc",
+					"protocol": "https",
+					"host": [
+						"tgy64w74i567hklqjb-internetbanking",
+						"caixa",
+						"gov",
+						"br"
+					],
+					"path": [
+						"sinbc",
+						"nb",
+						"logout"
+					],
+					"query": [
+						{
+							"key": "context",
+							"value": "sinbc",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
